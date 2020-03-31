@@ -1,7 +1,7 @@
-import pygame
+#import pygame
 from datetime import datetime
 
-
+'''
 pygame.init()
 # parameter initialization
 window_width = 850  # window width
@@ -22,6 +22,7 @@ pieces = [[pygame.image.load('./pieces/G_R.png'), pygame.image.load('./pieces/A_
            pygame.image.load('./pieces/C_B.png'), pygame.image.load('./pieces/Ca_B.png'),
            pygame.image.load('./pieces/S_B.png')]]
 # 90 blocks in the play window
+
 blocks = []
 for i in range(10):
     for j in range(9):
@@ -45,6 +46,7 @@ loc_2 = [(play_loc_x + 3 * block_size, play_loc_y),
          (play_loc_x + 4 * block_size, play_loc_y + play_height - block_size),
          (play_loc_x + 3 * block_size, play_loc_y + play_height - 2 * block_size),
          (play_loc_x + 5 * block_size, play_loc_y + play_height - 2 * block_size)]
+        '''
 # relationship between number and the name of actual piece
 relation = {0: 'General', 1: 'Avisor', 2: 'Elephant', 3: 'Horse', 4: 'Chariot', 5: 'Cannon', 6: 'Soldier'}
 
@@ -505,7 +507,7 @@ def log_window(window):
                 offsite += 20
         pygame.display.update()
 
-
+'''
 def main_menu(window):
     """this is a window as a welcom window"""
     run = True
@@ -514,13 +516,11 @@ def main_menu(window):
         startfont = pygame.font.SysFont('comicsansms', 60, True)  # initial the font
         tipfont = pygame.font.SysFont('comicsansms', 20, True)  # initial the font
         label1 = startfont.render('Welcome to Chinese Chess', 1, (255, 255, 255))  # the sentence and color
-        label2 = startfont.render('By Yutao Chen', 1, (255, 255, 255))  # the sentence and color
         label3 = startfont.render('Press SPACE To Play!', 1, (255, 255, 255))  # the sentence and color
         tip1 = tipfont.render('Press l To see the log for last game', 1, (255, 255, 255))
         tip2 = tipfont.render('Close the window to go back', 1, (255, 255, 255))
         # display the sentence on the screen
         window.blit(label1, ((window_width - label1.get_width()) / 2, (window_height / 2 - label1.get_height() - 25)))
-        window.blit(label2, ((window_width - label2.get_width()) / 2, (window_height - label2.get_height()) / 2))
         window.blit(label3, ((window_width - label3.get_width()) / 2, (window_height + label3.get_height()) / 2))
         window.blit(tip1, ((window_width - tip1.get_width()) // 2, window_height - tip1.get_height() - 60))
         window.blit(tip2, ((window_width - tip2.get_width()) // 2, window_height - tip2.get_height() - 40))
@@ -536,8 +536,9 @@ def main_menu(window):
                 if event.key == pygame.K_l:
                     log_window(window)
     pygame.display.quit()  # quit the game
-
-
+'''
+'''
 surface = pygame.display.set_mode((window_width, window_height))  # initial the window
 pygame.display.set_caption('Chinese Chess')  # the title of the game
 main_menu(surface)  # call the function and start the game
+'''
