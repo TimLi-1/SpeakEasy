@@ -42,13 +42,16 @@
     "webfontloader": "^1.6.28",
     "papaparse": "latest"
   },
+  "resolutions": {
+    "react-dev-utils": "10.1.0"
+  },
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.0.1",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
-    "react-scripts": "^3.3.0"
+    "react-scripts": "^3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -64,5 +67,18 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "http://speakeasy.services"
+  "proxy": "http://speakeasy.services",
+  "description": "SpeakEasy.tools is a data-driven web application for helping people to  learn a second language through artificial intelligence, data science, immersion, and  gamification.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimLi-1/SpeakEasy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimLi-1/SpeakEasy/issues"
+  },
+  "homepage": "https://github.com/TimLi-1/SpeakEasy#readme"
 }
